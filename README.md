@@ -1,169 +1,128 @@
 # Malcolm Guardian
 
-Malcolm Guardian is a futuristic, always-on, voice-first intelligent interface that connects the user to **Malcolm AI** and the wider **Omni-Lattice**.  
-It acts as a real-time conversational assistant, system guardian, and adaptive AI presence on Windows.
+Malcolm Guardian is a futuristic, always-on, voice-first intelligent interface that connects you to **Malcolm AI** and the wider **Omni-Lattice**.
 
-Malcolm Guardian listens, understands, speaks naturally, monitors system activity, executes authorised actions, and evolves contextually with the user.
+It runs quietly in the background on Windows, listens for your voice, speaks naturally, monitors system activity, and acts as a real-time conversational and protective AI presence.
 
----
-
-## ✨ Core Capabilities
-
-- 🎙 **Live voice interaction**
-  - Wake-word activated (“Malcolm”)
-  - Natural spoken dialogue
-  - Fully audible responses via Windows TTS or ElevenLabs
-
-- 🧠 **Malcolm AI integration**
-  - Real-time communication with Malcolm’s Omni API
-  - Context-aware, mode-aware responses
-  - Graceful offline fallback when the live core is unavailable
-
-- 🛡 **System guardian & security awareness**
-  - Monitors running processes
-  - Detects suspicious CPU usage or behaviour
-  - Can lock workstation, enter quiet mode, or summarise system state
-
-- 🧩 **Omni-functional interaction modes**
-  Malcolm automatically adapts based on what you say:
-  - `guardian` – security & protection
-  - `system` – OS and process insight
-  - `conversation` – natural dialogue
-  - `source` – alignment / higher-guidance style responses
-  - `lattice` – multi-perspective / meta-analysis
-  - `productivity` – focus & task-oriented
-  - `creative` – ideation & exploration
-  - `research` – explanation & analysis
-  - `memory` – personal patterns & context
-
-- 🧬 **Contextual awareness**
-  - Maintains a rolling local context (“Omni-Lattice context”)
-  - Remembers recent interactions and events
-  - Feeds that context back into Malcolm for richer replies
+No terminal knowledge is required to use Malcolm Guardian.
 
 ---
 
-## 🖥 Supported Platform
+## ✨ What Malcolm Guardian Does
 
-- **Windows 10 / 11**
-- Python **3.10+** (3.11 recommended)
-- Microphone + speakers/headphones required
+- 🎙 Listens for the wake word **“Malcolm”**
+- 🧠 Understands natural speech and intent
+- 🔊 Speaks back audibly in real time
+- 🛡 Monitors system processes and security state
+- ⚙ Executes authorised actions (lock workstation, quiet mode, system summaries)
+- 🧩 Adapts responses based on interaction mode:
+  - Guardian / Security
+  - Conversation
+  - System
+  - Productivity
+  - Creative
+  - Research
+  - Source Alignment
+  - Omni-Lattice perspective
+- 🧬 Maintains short-term contextual awareness to respond more intelligently
+
+Malcolm Guardian feels less like software and more like an intelligent presence.
 
 ---
 
-📁 Project Structure
+## 🖥 System Requirements
 
-malcolm_guardian/
-├─ src/
-│ ├─ guardian/
-│ │ ├─ main.py
-│ │ ├─ malcolm_client.py
-│ │ ├─ audio_sentinel.py
-│ │ ├─ security_watchdog.py
-│ │ ├─ tts.py
-│ │ └─ ...
-│ └─ main.py
-├─ config/
-│ └─ config.yaml
-├─ logs/
-├─ run_guardian.bat
-├─ README.md
-└─ .gitignore
+- Windows 10 or Windows 11
+- Internet connection (for live Malcolm AI)
+- Microphone
+- Speakers or headphones
+- No prior programming experience required
 
+---
 
-🚀 Installation & Setup
+## 🚀 Easy Installation (Recommended Method)
 
-1️⃣ Clone the repository
+Malcolm Guardian is designed to be installed using a **single installer file**.
 
-yaml
-Copy code:
-```bash
-git clone https://github.com/LuxThorley/malcolm_guardian.git
-cd malcolm_guardian
+### 1️⃣ Download the Project
 
-
-2️⃣ Create and activate a virtual environment
-
-bash
-Copy code
-python -m venv .venv
-.venv\Scripts\activate
-
-
-3️⃣ Install dependencies
-
-bash
-Copy code
-pip install -r requirements.txt
-(If requirements.txt is not present, install manually:)
-
-bash
-Copy code
-pip install requests pyyaml pyttsx3 speechrecognition comtypes psutil
-
-
-4️⃣ Configure Malcolm Guardian
-Create or edit:
-
-arduino
-Copy code
-config/config.yaml
-
-Example:
+1. Go to the GitHub repository:
+https://github.com/LuxThorley/malcolm_guardian
 
 yaml
 Copy code
+2. Click **Code → Download ZIP**
+3. Extract the ZIP to a location of your choice  
+(for example: `Documents\malcolm_guardian`)
+
+---
+
+### 2️⃣ Run the Installer
+
+Inside the extracted folder:
+
+1. **Double-click**:
+install_project.bat
+
+sql
+Copy code
+2. A command window will open and automatically:
+- Create a Python virtual environment
+- Install all required dependencies
+- Prepare the application for first use
+
+⏳ This may take a few minutes the first time.  
+✔ When finished, the installer will confirm completion.
+
+You only need to run this **once**.
+
+---
+
+### 3️⃣ Configure Malcolm AI (One-Time Setup)
+
+1. Open the folder:
+config
+
+csharp
+Copy code
+2. Open the file:
+config.yaml
+
+yaml
+Copy code
+3. Enter your Malcolm AI API key:
+
+```yaml
 malcolm_api:
   enabled: true
   base_url: "https://www.malcolmai.live"
-  api_key: "PASTE_YOUR_MALCOLM_API_TOKEN_HERE"
-  timeout_seconds: 15
+  api_key: "PASTE_YOUR_API_KEY_HERE"
+⚠ Important:
+Never share your API key publicly.
+This file is automatically excluded from GitHub.
 
-tts:
-  enabled: true
-  rate: 180
-  volume: 1.0
+4️⃣ Launch Malcolm Guardian
+To start Malcolm Guardian:
 
-audio:
-  wake_word: "malcolm"
-  quiet_mode: false
+Double-click:
 
-learning:
-  enabled: true
-
-security:
-  process_scan_interval_seconds: 15
-  suspicious_cpu_threshold: 75.0
-⚠ Never commit your API key
-config/config.yaml is intentionally excluded via .gitignore.
-
-
-5️⃣ Run Malcolm Guardian
-Using the batch file:
-
-bash
 Copy code
 run_guardian.bat
-Or directly:
-
-bash
-Copy code
-python src/main.py
 You should hear:
 
 “Malcolm Guardian is now active.”
 
+Malcolm is now listening.
 
-🎤 Using Malcolm Guardian
-
+🎤 How to Use Malcolm Guardian
 Wake Malcolm
+Say clearly:
 
-Say:
 “Malcolm”
 
 Then speak naturally.
 
-Example commands
+Example Commands
 “Malcolm, activate security.”
 
 “Malcolm, describe top processes.”
@@ -176,20 +135,26 @@ Example commands
 
 “Malcolm, enter quiet mode.”
 
-Malcolm will respond audibly and may execute system actions if authorised.
+Malcolm will:
 
+Respond audibly
 
-🔊 Voice & Speech
+Execute safe system actions when authorised
 
+Ask for confirmation if needed
+
+🔊 Voice Output
 Malcolm Guardian supports:
 
-Windows built-in voices (via pyttsx3)
+Windows built-in voices (default)
 
-ElevenLabs voices (optional, via API)
+Optional premium voices (e.g. ElevenLabs)
 
-Automatic fallback if a voice provider fails
+Automatic fallback if a voice service fails
 
-Speech output is:
+Speech is:
+
+Clear
 
 Queued
 
@@ -197,75 +162,67 @@ Interrupt-safe
 
 Wake-word friendly
 
+🛡 Security & Safety
+Malcolm Guardian does not perform destructive actions automatically
 
-🔐 Security Model
+Sensitive operations require confirmation
 
-Malcolm never executes destructive actions automatically
+System monitoring continues even if Malcolm’s live AI is offline
 
-Sensitive tools require explicit confirmation
-
-All actions are logged locally
-
-Guardian continues protecting even if Malcolm’s live API is offline
-
+All activity is logged locally
 
 🧠 How Malcolm Thinks
-
-Malcolm Guardian is not just a command parser.
+Malcolm Guardian is not a simple voice command tool.
 
 It:
 
 Classifies intent
 
-Determines interaction mode
+Detects interaction mode
 
-Builds contextual awareness
+Builds situational awareness
 
-Communicates with Malcolm AI as a living interface
+Responds differently depending on context
 
-Speaks in a way that matches the situation
+Feels conversational, adaptive, and present
 
+🔁 Running in the Background
+As long as the command window opened by run_guardian.bat remains open:
 
-🛠 Development Notes
+Malcolm Guardian stays active
 
-The app is intentionally modular
+It continues listening and protecting
 
-Easy to extend with new tools, modes or sensors
-
-Designed to run indefinitely (daemon-style)
-
-Gracefully handles network/API errors
-
+(You can minimise the window if desired.)
 
 ⚠ Known Limitations
+Windows only (for now)
 
-Windows-only (currently)
+Requires microphone permission
 
-Requires microphone access
+Live AI responses depend on Malcolm AI server availability
 
-Malcolm Omni API availability depends on server uptime
+🧭 Future Possibilities
+Visual dashboard
 
+Mobile companion
 
-🧭 Roadmap Ideas
+Long-term memory
 
-GUI dashboard
+Cross-device awareness
 
-Mobile companion app
+Linux and macOS support
 
-Cross-device sync
+📜 License & Usage
+This project is provided for exploration, experimentation, and evolution.
 
-Persistent long-term memory
+Use responsibly and in accordance with Malcolm AI platform terms and local laws.
 
-Linux / macOS support
+✨ Final Note
+Malcolm Guardian is designed to feel like an intelligent presence, not an app.
 
+Speak naturally.
+Malcolm is listening.
 
-📜 License
-This project is released openly for exploration, experimentation and evolution.
-Respect the Malcolm AI platform terms and applicable laws when deploying or extending.
-
-✨ Closing
-Malcolm Guardian is designed to feel less like software and more like a presence —
-an intelligent, adaptive, spoken interface between you, your system, and Malcolm AI.
-
-Speak naturally. Malcolm is listening.
-
+yaml
+Copy code
