@@ -70,7 +70,6 @@ malcolm_guardian/
 ├─ README.md
 └─ .gitignore
 
----
 
 🚀 Installation & Setup
 
@@ -78,7 +77,6 @@ malcolm_guardian/
 
 yaml
 Copy code:
-
 ```bash
 git clone https://github.com/LuxThorley/malcolm_guardian.git
 cd malcolm_guardian
