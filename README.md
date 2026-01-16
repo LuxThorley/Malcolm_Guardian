@@ -51,7 +51,7 @@ Malcolm Guardian listens, understands, speaks naturally, monitors system activit
 
 ---
 
-## 📁 Project Structure
+📁 Project Structure
 
 malcolm_guardian/
 ├─ src/
@@ -72,10 +72,9 @@ malcolm_guardian/
 
 ---
 
-## 🚀 Installation & Setup
+🚀 Installation & Setup
 
-
-### 1️⃣ Clone the repository
+1️⃣ Clone the repository
 
 yaml
 Copy code:
