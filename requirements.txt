@@ -1,0 +1,8 @@
+SpeechRecognition
+PyAudio
+psutil
+pyttsx3
+pyyaml
+colorama
+requests
+pydub 
